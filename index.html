@@ -13,34 +13,82 @@
     <section>
         <form action="" method="get"> <!--action é onde vamos colocar a URL de destino dos dados; o method é um metodo onde os dados podem ficar visiveis na URl ou em metodo onde os dados vão para o backend-->
             
-            <fieldset>
-                <!-- DADOS PESSOAIS -->
+            <!-- <fieldset>
                 <legend>Dados Pessoais</legend>
-                <label for="userName">Nome</label> <!--Descrição da tag name do input-->
-                <input type="text" name="userName" required> <!-- é a caixa de texto onde vai receber a informação; o "for" é o nome, o atributo desse input-->
+                <label for="userName">Nome</label>
+                <input type="text" name="userName" required>
                 <br>
-            
                 <label for="age">Idade</label>
                 <input type="number" name="age" min="12" max="100">
                 <br>
-                
                 <label for="birthDate">Data de nascimento</label>
                 <input type="date" name="birthDate">
                 <br>
-
                 <label for="userEmail">Email</label>
                 <input type="email" name="userEmail" required>
                 <br>
-                
                 <label for="userPhoneNumber">Telefone</label>
                 <input type="tel" name="userPhoneNumber" pattern="[0-9]{11}" placeholder="DDD + número sem espaços ou hífen">
                 <br>
-
                 <label for="userImage">Upload de foto</label>
                 <input type="file" accept="image/*" name="userImage">
                 <br>
-            </fieldset>
+            </fieldset> -->
 
+            <fieldset>
+                <legend>Perfil</legend>
+
+                <p>Gênero:</p>
+                <input type="radio" name="userGender" value="Femino">
+                <label for="userGender">Feminino</label>
+
+                <input type="radio" name="userGender" value="Masculino">
+                <label for="userGender">Masculino</label>
+
+                <input type="radio" name="userGender" value="notInformed">
+                <label for="userGender">Prefiro não informar</label>
+                <br>
+                <label for="maritalStatus">Estado cívil:</label>
+                <select name="maritalStatus">
+                    <option value="notInformed">Selecione...</option>
+                    <option value="casado">Casado</option>
+                    <option value="solteiro">Solteiro</option>
+                    <option value="divorciado">Divorciado</option>
+                    <option value="uniaoEstavel">União Estável</option>
+                </select>
+
+                <label for="userState">Estado cívil:</label>
+                <select name="userState">
+                <option value="acre">Acre</option>
+                <option value="alagoas">Alagoas</option>
+                <option value="amapa">Amapá</option>
+                <option value="amazonas">Amazonas</option>
+                <option value="bahia">Bahia</option>
+                <option value="ceara">Ceará</option>
+                <option value="distritofederal">Distrito Federal</option>
+                <option value="espiritosanto">Espírito Santo</option>
+                <option value="goias">Goiás</option>
+                <option value="maranhao">Maranhão</option>
+                <option value="matogrossodosul">Mato Grosso do Sul</option>
+                <option value="matogrosso">Mato Grosso</option>
+                <option value="minasgerais">Minas Gerais</option>
+                <option value="para">Pára</option>
+                <option value="paraiba">Paraíba</option>
+                <option value="parana">Paraná</option>
+                <option value="pernambuco">Pernambuco</option>
+                <option value="piaui">Piauí</option>
+                <option value="riodejaneiro">Rio de Janeiro</option>
+                <option value="riograndedonorte">Rio Grande do Norte</option>
+                <option value="riograndedosul">Rio Grande do Sul</option>
+                <option value="rondonia">Rondônia</option>
+                <option value="roraima">Roraima</option>
+                <option value="santacatarina">Santa Catarina</option>
+                <option value="saopaulo">São Paulo</option>
+                <option value="sergipe">Sergipe</option>
+                <option value="tocantins">Tocantins</option>
+                </select>
+
+            </fieldset>
             <button type="submit">Enviar</button> <!-- é o botão; a type submite é onde vai submeter as informações para algum lugar-->
         </form>
     </section>
