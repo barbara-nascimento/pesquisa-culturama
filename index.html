@@ -3,10 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Pesquisa Culturama</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+    <header>
+        <h1>Pesquisa Online</h1>
+    </header>
+    <section>
+        <form action="" method="get"> <!--action é onde vamos colocar a URL de destino dos dados; o method é um metodo onde os dados podem ficar visiveis na URl ou em metodo onde os dados vão para o backend-->
+            
+            <fieldset>
+                <!-- DADOS PESSOAIS -->
+                <legend>Dados Pessoais</legend>
+                <label for="userName">Nome</label> <!--Descrição da tag name do input-->
+                <input type="text" name="userName" required> <!-- é a caixa de texto onde vai receber a informação; o "for" é o nome, o atributo desse input-->
+                <br>
+            
+                <label for="age">Idade</label>
+                <input type="number" name="age" min="12" max="100">
+                <br>
+                
+                <label for="birthDate">Data de nascimento</label>
+                <input type="date" name="birthDate">
+                <br>
+
+                <label for="userEmail">Email</label>
+                <input type="email" name="userEmail" required>
+                <br>
+                
+                <label for="userPhoneNumber">Telefone</label>
+                <input type="tel" name="userPhoneNumber" pattern="[0-9]{11}" placeholder="DDD + número sem espaços ou hífen">
+                <br>
+
+                <label for="userImage">Upload de foto</label>
+                <input type="file" accept="image/*" name="userImage">
+                <br>
+            </fieldset>
+
+            <button type="submit">Enviar</button> <!-- é o botão; a type submite é onde vai submeter as informações para algum lugar-->
+        </form>
+    </section>
 </body>
 </html>
