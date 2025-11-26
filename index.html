@@ -13,26 +13,33 @@
     <section>
         <form action="" method="get"> <!--action é onde vamos colocar a URL de destino dos dados; o method é um metodo onde os dados podem ficar visiveis na URl ou em metodo onde os dados vão para o backend-->
             
-                <fieldset>
+            <fieldset>
+                
                 <legend>Dados Pessoais</legend>
                 <label for="name">Nome</label>
                 <input id="name" type="text" name="userName" required>
                 <br>
+
                 <label for="age">Idade</label>
                 <input id="age" type="number" name="age" min="12" max="100">
                 <br>
+
                 <label for="birthDate">Data de nascimento</label>
                 <input id="birthDate" type="date" name="userBirthDate">
                 <br>
+
                 <label for="email">Email</label>
                 <input id="email" type="email" name="userEmail" required>
                 <br>
+
                 <label for="phoneNumber">Telefone</label>
                 <input id="phoneNumber" type="tel" name="userPhoneNumber" pattern="[0-9]{11}" placeholder="DDD + número sem espaços ou hífen">
                 <br>
+
                 <label for="image">Upload de foto</label>
                 <input id="image" type="file" accept="image/*" name="userImage">
                 <br>
+
             </fieldset> 
 
             <fieldset>
@@ -48,6 +55,7 @@
                 <input id="notInformed" type="radio" name="userGender" value="notInformed">
                 <label for="notInformed">Prefiro não informar</label>
                 <br>
+
                 <label for="maritalStatus">Estado cívil:</label>
                 <select id="maritalStatus" name="userMaritalStatus">
                     <option value="notInformed">Selecione...</option>
@@ -59,55 +67,61 @@
 
                 <label for="state">Estado:</label>
                 <select id="state" name="userState">
-                <option value= "acre">Acre</option>
-                <option value= "alagoas">Alagoas</option>
-                <option value= "amapa">Amapá</option>
-                <option value= "amazonas">Amazonas</option>
-                <option value= "bahia">Bahia</option>
-                <option value= "ceara">Ceará</option>
-                <option value= "distritoFederal">Distrito Federal</option>
-                <option value= "espiritoSanto">Espírito Santo</option>
-                <option value= "goias">Goiás</option>
-                <option value= "maranhao">Maranhão</option>
-                <option value= "matoGrossoDoSul">Mato Grosso do Sul</option>
-                <option value= "mato grosso">Mato Grosso</option>
-                <option value= "minasGerais">Minas Gerais</option>
-                <option value= "para">Pára</option>
-                <option value= "paraiba">Paraíba</option>
-                <option value= "parana">Paraná</option>
-                <option value= "pernambuco">Pernambuco</option>
-                <option value= "piaui">Piauí</option>
-                <option value= "rioDeJaneiro">Rio de Janeiro</option>
-                <option value= "rioGrandeDoNorte">Rio Grande do Norte</option>
-                <option value= "rioGrandeDoSul">Rio Grande do Sul</option>
-                <option value= "rondonia">Rondônia</option>
-                <option value= "roraima">Roraima</option>
-                <option value= "santaCatarina">Santa Catarina</option>
-                <option value= "saoPaulo">São Paulo</option>
-                <option value= "sergipe">Sergipe</option>
-                <option value= "tocantins">Tocantins</option>
+                    <option value= "acre">Acre</option>
+                    <option value= "alagoas">Alagoas</option>
+                    <option value= "amapa">Amapá</option>
+                    <option value= "amazonas">Amazonas</option>
+                    <option value= "bahia">Bahia</option>
+                    <option value= "ceara">Ceará</option>
+                    <option value= "distritoFederal">Distrito Federal</option>
+                    <option value= "espiritoSanto">Espírito Santo</option>
+                    <option value= "goias">Goiás</option>
+                    <option value= "maranhao">Maranhão</option>
+                    <option value= "matoGrossoDoSul">Mato Grosso do Sul</option>
+                    <option value= "mato grosso">Mato Grosso</option>
+                    <option value= "minasGerais">Minas Gerais</option>
+                    <option value= "para">Pára</option>
+                    <option value= "paraiba">Paraíba</option>
+                    <option value= "parana">Paraná</option>
+                    <option value= "pernambuco">Pernambuco</option>
+                    <option value= "piaui">Piauí</option>
+                    <option value= "rioDeJaneiro">Rio de Janeiro</option>
+                    <option value= "rioGrandeDoNorte">Rio Grande do Norte</option>
+                    <option value= "rioGrandeDoSul">Rio Grande do Sul</option>
+                    <option value= "rondonia">Rondônia</option>
+                    <option value= "roraima">Roraima</option>
+                    <option value= "santaCatarina">Santa Catarina</option>
+                    <option value= "saoPaulo">São Paulo</option>
+                    <option value= "sergipe">Sergipe</option>
+                    <option value= "tocantins">Tocantins</option>
                 </select>
                 <br>
 
                 <label for="city">Cidade:</label>
                 <input id="city" type="text" name="userCity" autocomplete="address-level2" placeholder="Ex.: Fortaleza" />
+
             </fieldset>
 
             <fieldset>
                 <legend>Hábitos</legend>
+
                 <p>Redes Sociais:</p>
                 <input id="instagram" type="checkbox" name="social" value="instagram">
                 <label for="instagram">Instagram</label>
                 <br>
+
                 <input id="facebook" type="checkbox" name="social" value="facebook">
                 <label for="facebook">Facebook</label>
                 <br>
+
                 <input id="linkedin" type="checkbox" name="social" value="linkedin">
                 <label for="linkedin">Linkedin</label>
                 <br>
+
                 <input id="x" type="checkbox" name="social" value="x">
                 <label for="x">X</label>
                 <br>
+
                 <label for="musicStyle">Estilo musical:</label>
                 <input id="musicStyle" name="userMusicStyle" type="text">
                 <datalist id="styleTypes">
@@ -117,9 +131,29 @@
                     <option value="Sertanejo">
                 </datalist>
                 <br>
+
                 <label for="favoriteColor">Cor favorita</label>
                 <input type="color" name="userFavoriteColor" id="favoriteColor">
+
             </fieldset>
+
+            <fieldset>
+                <legend>Pesquisa de satisfação</legend>
+
+                <input id="otima" type="radio" name="userOtima" value="Otima">
+                <label for="otima">Ótima</label>
+
+                <input id="boa" type="radio" name="userBoa" value="Boa">
+                <label for="boa">Boa</label>
+
+                <input id="regular" type="radio" name="userRegular" value="Regular">
+                <label for="regular">Regular</label>
+
+                <input id="ruim" type="radio" name="userRuim" value="Ruim">
+                <label for="ruim">Ruim</label>
+                <br>
+            </fieldset>
+            
             <button type="submit">Enviar</button> <!-- é o botão; a type submite é onde vai submeter as informações para algum lugar-->
         </form>
     </section>
