@@ -13,67 +13,56 @@
     <title>Pesquisa Culturama</title>
 </head>
 <body>
-    <header>
-        <img src="img/logo-culturama.png" alt="logo culturama">
-        <h1>Pesquisa Online</h1>
-    </header>
-    <section>
-        <form action="" method="get"> <!--action é onde vamos colocar a URL de destino dos dados; o method é um metodo onde os dados podem ficar visiveis na URl ou em metodo onde os dados vão para o backend-->
-            
-            <fieldset>
-                
-                <legend>Dados Pessoais</legend>
-                <label for="name">Nome</label>
-                <input id="name" type="text" name="userName" required>
-                <br>
-
-                <label for="age">Idade</label>
-                <input id="age" type="number" name="age" min="12" max="100">
-                <br>
-
-                <label for="birthDate">Data de nascimento</label>
-                <input id="birthDate" type="date" name="userBirthDate">
-                <br>
-
-                <label for="email">Email</label>
-                <input id="email" type="email" name="userEmail" required>
-                <br>
-
-                <label for="phoneNumber">Telefone</label>
-                <input id="phoneNumber" type="tel" name="userPhoneNumber" pattern="[0-9]{11}" placeholder="DDD + número sem espaços ou hífen">
-                <br>
-
-                <label for="image">Upload de foto</label>
-                <input id="image" type="file" accept="image/*" name="userImage">
-                <br>
-
-            </fieldset> 
-
-            <fieldset>
-                <legend>Perfil</legend>
-
-                <p>Gênero:</p>
-                <input id="fem" type="radio" name="userGender" value="Femino">
-                <label for="fem">Feminino</label>
-
-                <input id="masc" type="radio" name="userGender" value="Masculino">
-                <label for="masc">Masculino</label>
-
-                <input id="notInformed" type="radio" name="userGender" value="notInformed">
-                <label for="notInformed">Prefiro não informar</label>
-                <br>
-
-                <label for="maritalStatus">Estado cívil:</label>
-                <select id="maritalStatus" name="userMaritalStatus">
-                    <option value="notInformed">Selecione...</option>
-                    <option value="casado">Casado</option>
-                    <option value="solteiro">Solteiro</option>
-                    <option value="divorciado">Divorciado</option>
-                    <option value="uniaoEstavel">União Estável</option>
-                </select>
-
-                <label for="state">Estado:</label>
-                <select id="state" name="userState">
+    <main>
+        <header>
+            <img src="img/logo-culturama.png" alt="logo culturama">
+            <h1>Pesquisa de Opnião</h1>
+        </header>
+        <section>
+            <form action="" method="get"> <!--action é onde vamos colocar a URL de destino dos dados; o method é um metodo onde os dados podem ficar visiveis na URl ou em metodo onde os dados vão para o backend-->
+        
+                <fieldset>
+        
+                    <legend>Dados Pessoais</legend>
+                    <label for="name">Nome</label>
+                    <input id="name" type="text" name="userName" required>
+                    <br>
+                    <label for="age">Idade</label>
+                    <input id="age" type="number" name="age" min="12" max="100" required>
+                    <br>
+                    <label for="birthDate">Data de nascimento</label>
+                    <input id="birthDate" type="date" name="userBirthDate">
+                    <br>
+                    <label for="email">Email</label>
+                    <input id="email" type="email" name="userEmail" required>
+                    <br>
+                    <label for="phoneNumber">Telefone</label>
+                    <input id="phoneNumber" type="tel" name="userPhoneNumber" pattern="[0-9]{11}" placeholder="DDD + número sem espaços ou hífen">
+                    <br>
+                    <label for="image">Upload de foto</label>
+                    <input id="image" type="file" accept="image/*" name="userImage">
+                    <br>
+                </fieldset>
+                <fieldset>
+                    <legend>Perfil</legend>
+                    <p>Gênero:</p>
+                    <input id="fem" type="radio" name="userGender" value="Femino">
+                    <label for="fem">Feminino</label>
+                    <input id="masc" type="radio" name="userGender" value="Masculino">
+                    <label for="masc">Masculino</label>
+                    <input id="notInformed" type="radio" name="userGender" value="notInformed">
+                    <label for="notInformed">Prefiro não informar</label>
+                    <br>
+                    <label for="maritalStatus">Estado cívil:</label>
+                    <select id="maritalStatus" name="userMaritalStatus">
+                        <option value="notInformed">Selecione...</option>
+                        <option value="casado">Casado</option>
+                        <option value="solteiro">Solteiro</option>
+                        <option value="divorciado">Divorciado</option>
+                        <option value="uniaoEstavel">União Estável</option>
+                    </select>
+                    <label for="state">Estado:</label>
+                    <select id="state" name="userState">
                     <option value= "acre">Acre</option>
                     <option value= "alagoas">Alagoas</option>
                     <option value= "amapa">Amapá</option>
@@ -105,8 +94,7 @@
                 <br>
 
                 <label for="city">Cidade:</label>
-                <input id="city" type="text" name="userCity" autocomplete="address-level2" placeholder="Ex.: Fortaleza" />
-
+                <input id="city" type="text" name="userCity" autocomplete="addressLevel2" placeholder="Ex.: Fortaleza" />
             </fieldset>
 
             <fieldset>
@@ -141,7 +129,6 @@
 
                 <label for="favoriteColor">Cor favorita</label>
                 <input type="color" name="userFavoriteColor" id="favoriteColor">
-
             </fieldset>
 
             <fieldset>
@@ -173,13 +160,14 @@
                 <br>
 
                 <input type="checkbox" name="userGetResult" id="getResult" value="accepted">
-                <label for="userLgpdTerm">Desejo receber o resultado por e-mail</label>
+                <label for="userLgpdTerm">Desejo receber o resultado por eMail</label>
             </fieldset>
             
-            <button type="submit">Enviar</button> <!-- é o botão; a type submite é onde vai submeter as informações para algum lugar-->
+            <button type="submit">Enviar</button> <! é o botão; a type submite é onde vai submeter as informações para algum lugar>
 
             <button type="reset">Limpar</button>
         </form>
     </section>
+    </main>
 </body>
 </html>
